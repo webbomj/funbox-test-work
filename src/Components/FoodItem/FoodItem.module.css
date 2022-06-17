@@ -1,0 +1,46 @@
+.FoodItem {
+
+}
+
+.cardBorder::before {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  content: '';
+  border-radius: 11px;
+  background: linear-gradient(135deg, transparent 30px, #f2f2f2 0) top left;
+}
+
+.cardBorder {
+  margin:14px;
+  position: relative;
+  width: 320px;
+  height: 480px;
+  border-radius: 14px;
+  background: linear-gradient(135deg,transparent 32px,#1698d9 0),0 0,no-repeat
+}
+
+.mainBlock {
+  width: 320px;
+  height: 480px;
+  background: #F2F2F2;
+  border: 4px solid #1698D9;
+  border-radius: 12px;
+}
+
+.bottomText {
+  font-family: 'Trebuchet MS';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed #1698D9;
+}
