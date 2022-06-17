@@ -1,4 +1,4 @@
-.foodList{
+.wrapper{
   width:1120px;
   height:577px;
   background-color: red;
@@ -12,4 +12,8 @@
   text-align: center;
   color: #FFFFFF;
   text-shadow: 0px 1px 1px #000000;
+}
+
+.foodList {
+  display: flex;
 }

@@ -5,9 +5,12 @@ import { foodData } from '../../App';
 
 const FoodList:FC<{state: foodData[]}> = ({state}) => {
   return (
-    <div className={s.foodList}>
+    <div className={s.wrapper}>
       <h1 className={s.header}>Ты сегодня покормил кота?</h1>
-      {state.map(el => <FoodItem key={el.id} state={el}/>)}
+      <div className={s.foodList}>
+        {state.map(el => <FoodItem key={el.id} state={el}/>)}
+      </div>
+      
     </div>
   );
 };

@@ -1,5 +1,14 @@
 .FoodItem {
+  width: 320px;
+}
 
+.FoodItem:not(:nth-child(3)) {
+  margin-right: 80px;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed #1698D9;
 }
 
 .cardBorder::before {
@@ -14,20 +23,11 @@
 }
 
 .cardBorder {
-  margin:14px;
   position: relative;
   width: 320px;
   height: 480px;
   border-radius: 14px;
   background: linear-gradient(135deg,transparent 32px,#1698d9 0),0 0,no-repeat
-}
-
-.mainBlock {
-  width: 320px;
-  height: 480px;
-  background: #F2F2F2;
-  border: 4px solid #1698D9;
-  border-radius: 12px;
 }
 
 .bottomText {
@@ -36,11 +36,5 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  text-align: center;
   color: #FFFFFF;
-}
-
-a {
-  text-decoration: none;
-  border-bottom: 1px dashed #1698D9;
 }
