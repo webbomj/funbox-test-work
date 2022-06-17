@@ -1,0 +1,28 @@
+{
+  "data": [
+    {"id": 1,
+      "productName": "Нямушка",
+      "taste": "с фуа-гра",
+      "portions": 10,
+      "presentsMouse": 1,
+      "weight": 0.5,
+      "description": "Печень утки разварная с артишоками."
+    },
+    {"id": 2,
+      "productName": "Нямушка",
+      "taste": "с рыбой",
+      "portions": 40,
+      "presentsMouse": 2,
+      "weight": 2,
+      "description": "Головы щучьи с чесноком да свежайшая сёмгушка."
+    },
+    {"id": 3,
+      "productName": "Нямушка",
+      "taste": "с курой",
+      "portions": 100,
+      "presentsMouse": 5,
+      "weight": 5,
+      "description": "Филе из цыплят с трюфелями в бульоне."
+    }
+  ]
+}
