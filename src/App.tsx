@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { FC, useState } from 'react';
 import './App.css';
 import FoodList from './Components/FoodList/FoodList';
+import data from './Data/data.json'
 
-function App() {
+export interface foodData {
+  id: number,
+  productName: string,
+  taste: string,
+  portions: number,
+  presentsMouse: number,
+  weight: number,
+  description: string
+}
+
+const App:FC = () => {
+  const [state, setState] = useState<foodData[]>(data.data)
+  
   return (
     <div className="App">
-      <FoodList/>
+      <FoodList state={state}/>
     </div>
   );
 }
