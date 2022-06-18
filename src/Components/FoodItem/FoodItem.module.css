@@ -1,5 +1,6 @@
 .FoodItem {
   width: 320px;
+  margin-bottom: 30px;
 }
 
 .FoodItem:not(:nth-child(3)) {
@@ -9,7 +10,9 @@
 a {
   text-decoration: none;
   border-bottom: 1px dashed #1698D9;
+  color: #1698D9;
 }
+
 
 .cardBorder {
   position: relative;
@@ -174,4 +177,20 @@ a {
 
 .borderBlocked {
   background: linear-gradient(135deg,transparent 31px,#b2b2b2 0),0 0,no-repeat;
+}
+
+@media (max-width: 1130px) {
+  .FoodItem:not(:nth-child(3)) {
+    margin-right: 0;
+  }
+
+  .FoodItem:nth-child(1) {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .FoodItem:nth-child(1) {
+    margin-right: 0;
+  }
 }

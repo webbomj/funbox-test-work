@@ -16,4 +16,19 @@
 
 .foodList {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1130px) {
+  .wrapper{
+    width:700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper{
+    width:320px;
+  }
 }

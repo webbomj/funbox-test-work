@@ -1,5 +1,4 @@
 import React, { FC, useState } from 'react';
-import './App.css';
 import FoodList from './Components/FoodList/FoodList';
 import data from './Data/data.json'
 import { foodData } from './types/FoodData';

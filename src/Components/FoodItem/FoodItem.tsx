@@ -9,7 +9,6 @@ const FoodItem:FC<{state: foodData}> = ({state}) => {
   const [isMouseOff, setIsMouseOff] = useState(false)
 
   const mouseOutHandler = (e: any) => {
-    console.log(e)
     if (+e.target.id !== state.id) return
     if (isSelected && +e.target.id === state.id) {
       setIsMouseOff(true)
