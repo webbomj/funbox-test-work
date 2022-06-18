@@ -11,30 +11,145 @@ a {
   border-bottom: 1px dashed #1698D9;
 }
 
-.cardBorder::before {
+.cardBorder {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  padding: 21px 0 0 51px;
+  border-radius: 11px;
+  background: linear-gradient(135deg,transparent 31px,#1698d9 0),0 0,no-repeat;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.cardBorder::after {
+  content: '';
   position: absolute;
   top: 4px;
   right: 4px;
   bottom: 4px;
   left: 4px;
-  content: '';
-  border-radius: 11px;
-  background: linear-gradient(135deg, transparent 30px, #f2f2f2 0) top left;
+  border-radius: 8px;
+  background: linear-gradient(135deg, transparent 32px, #f2f2f2 0) top left;
+  overflow: hidden;
+  z-index: -1
 }
 
-.cardBorder {
-  position: relative;
-  width: 320px;
-  height: 480px;
-  border-radius: 14px;
-  background: linear-gradient(135deg,transparent 32px,#1698d9 0),0 0,no-repeat
+.wrapperContent {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 10px;
+  padding: 17px 0 0 48px;
+  overflow: hidden;
+}
+
+.topTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
+
+.productName {
+  margin: 5px 0 0 -3px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.taste {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.portions {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.topPortions {
+  margin: 14px 0 0 0px;
+  letter-spacing: 0.1px;
+}
+
+.botPortions {
+  letter-spacing: -0.05px;
+}
+
+.botPortions span,
+.topPortions span {
+  font-weight: 700;
+}
+
+.photo {
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+}
+
+.weightWrapper {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 80px;
+  background: #2EA8E6;
+  border-radius: 50%;
+}
+
+.weightCount {
+  margin: 20px 0 0 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.weight {
+  margin-top: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .bottomText {
-  font-family: 'Trebuchet MS';
+  margin-top: 14px;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
+  text-align: center;
   color: #FFFFFF;
+}
+
+.isSelected {
+  background: linear-gradient(135deg,transparent 31px,#D91667 0),0 0,no-repeat;
+}
+
+.bottomBlocked {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFF66;
 }

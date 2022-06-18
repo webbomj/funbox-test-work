@@ -6,7 +6,9 @@
       "portions": 10,
       "presentsMouse": 1,
       "weight": 0.5,
-      "description": "Печень утки разварная с артишоками."
+      "description": "Печень утки разварная с артишоками.",
+      "satisfied": "",
+      "inStock": true
     },
     {"id": 2,
       "productName": "Нямушка",
@@ -14,7 +16,9 @@
       "portions": 40,
       "presentsMouse": 2,
       "weight": 2,
-      "description": "Головы щучьи с чесноком да свежайшая сёмгушка."
+      "description": "Головы щучьи с чесноком да свежайшая сёмгушка.",
+      "satisfied": "",
+      "inStock": true
     },
     {"id": 3,
       "productName": "Нямушка",
@@ -22,7 +26,9 @@
       "portions": 100,
       "presentsMouse": 5,
       "weight": 5,
-      "description": "Филе из цыплят с трюфелями в бульоне."
+      "description": "Филе из цыплят с трюфелями в бульоне.",
+      "satisfied": "заказчик доволен",
+      "inStock": false
     }
   ]
 }

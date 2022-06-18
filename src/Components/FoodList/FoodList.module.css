@@ -1,12 +1,12 @@
 .wrapper{
   width:1120px;
   height:577px;
-  background-color: red;
   margin: 0 auto;
   transform: translateY(calc(50vh - (577px / 2)));
 }
 
 .header {
+  font-family: 'Exo2';
   font-size: 36px;
   line-height: 44px;
   text-align: center;

@@ -10,7 +10,9 @@ export interface foodData {
   portions: number,
   presentsMouse: number,
   weight: number,
-  description: string
+  description: string,
+  satisfied: string,
+  inStock: boolean
 }
 
 const App:FC = () => {

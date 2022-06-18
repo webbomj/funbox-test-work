@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Exo2.0-Thin';
+  font-family: 'Exo2';
   src: url('./fonts/Exo2.0-Thin.otf');
 }
 
@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  font-family: 'Exo2.0-Thin', sans-serif;
+  font-family: Trebuchet MS, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url('./images/Pattern.png') repeat;
