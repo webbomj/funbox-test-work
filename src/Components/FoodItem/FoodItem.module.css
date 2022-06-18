@@ -160,6 +160,8 @@ a {
   line-height: 15px;
   text-align: center;
   color: #FFFF66;
+  letter-spacing: -0.1px;
+  word-spacing: 0.5px;
 }
 
 .textBlocked {
