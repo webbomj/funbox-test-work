@@ -9,10 +9,9 @@
 
 a {
   text-decoration: none;
-  border-bottom: 1px dashed #1698D9;
-  color: #1698D9;
+  border-bottom: 1px dashed #1698d9;
+  color: #1698d9;
 }
-
 
 .cardBorder {
   position: relative;
@@ -20,13 +19,14 @@ a {
   height: 480px;
   padding: 21px 0 0 51px;
   border-radius: 11px;
-  background: linear-gradient(135deg,transparent 31px,#1698d9 0),0 0,no-repeat;
+  background: linear-gradient(135deg, transparent 31px, #1698d9 0), 0 0,
+    no-repeat;
   overflow: hidden;
   z-index: -2;
 }
 
 .cardBorder::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 4px;
   right: 4px;
@@ -35,7 +35,7 @@ a {
   border-radius: 8px;
   background: linear-gradient(135deg, transparent 32px, #f2f2f2 0) top left;
   overflow: hidden;
-  z-index: -1
+  z-index: -1;
 }
 
 .wrapperContent {
@@ -58,7 +58,7 @@ a {
 }
 
 .topTitleActive {
-  color: #E62E7A;
+  color: #e62e7a;
 }
 
 .productName {
@@ -118,7 +118,7 @@ a {
   flex-direction: column;
   width: 80px;
   height: 80px;
-  background: #2EA8E6;
+  background: #2ea8e6;
   border-radius: 50%;
 }
 
@@ -129,7 +129,7 @@ a {
   font-size: 42px;
   line-height: 22px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .weight {
@@ -139,11 +139,11 @@ a {
   font-size: 20px;
   line-height: 22px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .weightBlocked {
-  background: #B3B3B3;
+  background: #b3b3b3;
 }
 
 .bottomText {
@@ -153,11 +153,12 @@ a {
   font-size: 13px;
   line-height: 15px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .isSelected {
-  background: linear-gradient(135deg,transparent 31px,#D91667 0),0 0,no-repeat;
+  background: linear-gradient(135deg, transparent 31px, #d91667 0), 0 0,
+    no-repeat;
 }
 
 .bottomBlocked {
@@ -166,17 +167,18 @@ a {
   font-size: 13px;
   line-height: 15px;
   text-align: center;
-  color: #FFFF66;
+  color: #ffff66;
   letter-spacing: -0.1px;
   word-spacing: 0.5px;
 }
 
 .textBlocked {
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
 
 .borderBlocked {
-  background: linear-gradient(135deg,transparent 31px,#b2b2b2 0),0 0,no-repeat;
+  background: linear-gradient(135deg, transparent 31px, #b2b2b2 0), 0 0,
+    no-repeat;
 }
 
 @media (max-width: 1130px) {

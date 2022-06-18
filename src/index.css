@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Exo2';
-  src: url('./fonts/Exo2.0-Thin.otf');
+  font-family: "Exo2";
+  src: url("./fonts/Exo2.0-Thin.otf");
 }
 
 * {
@@ -12,11 +12,16 @@ body {
   font-family: Trebuchet MS, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url('./images/Pattern.png') repeat, linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%);;
-  
+  background: url("./images/Pattern.png") repeat,
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 5e-5) 49.88%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

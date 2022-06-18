@@ -1,6 +1,7 @@
 {
   "data": [
-    {"id": 1,
+    {
+      "id": 1,
       "productName": "Нямушка",
       "taste": "с фуа-гра",
       "portions": 10,
@@ -10,7 +11,8 @@
       "satisfied": "",
       "inStock": true
     },
-    {"id": 2,
+    {
+      "id": 2,
       "productName": "Нямушка",
       "taste": "с рыбой",
       "portions": 40,
@@ -20,7 +22,8 @@
       "satisfied": "",
       "inStock": true
     },
-    {"id": 3,
+    {
+      "id": 3,
       "productName": "Нямушка",
       "taste": "с курой",
       "portions": 100,
