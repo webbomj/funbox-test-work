@@ -2,16 +2,12 @@ import React, { FC, useState } from 'react';
 import { foodData } from '../../App';
 import s from './FoodItem.module.css'
 import Photo from '../../images/Photo.png'
+import FoodItemBottom from './FoodItemBottom';
 
 const FoodItem:FC<{state: foodData}> = ({state}) => {
   const [isSelected, setIsSelected] = useState(false)
 
-  const bottomPart = React.useCallback((isSelected:boolean, isBlocked:boolean) => {
-    if (isBlocked) return <div className={s.bottomBlocked}>Печалька, {state.taste} закончился</div>
-    if (isSelected) return state.description
-    else return  <>Чего сидишь? Порадуй котэ, <a href="#">купи.</a></>
-
-  }, [isSelected])
+  
 
   return (
     <div className={s.FoodItem}>
@@ -40,15 +36,12 @@ const FoodItem:FC<{state: foodData}> = ({state}) => {
         </div>
       </div>
       <p className={s.bottomText}>
-        {bottomPart(isSelected, !state.inStock)}
-        {/* {isSelected 
-        ? 
-        state.description
-        : 
-        <>Чего сидишь? Порадуй котэ, <a href="#">купи.</a></>
-        } */}
+        <FoodItemBottom 
+          isSelected={isSelected}
+          isBlocked={!state.inStock}
+          taste={state.taste}
+          description={state.description}/>
       </p>
-      {}
     </div>
   );
 };
