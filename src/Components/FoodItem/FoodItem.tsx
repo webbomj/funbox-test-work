@@ -11,14 +11,14 @@ const FoodItem:FC<{state: foodData}> = ({state}) => {
 
   return (
     <div className={s.FoodItem}>
-      <div className={isSelected ? s.cardBorder + ' ' + s.isSelected : s.cardBorder}>
+      <div className={state.inStock ? s.cardBorder : `${s.cardBorder} ${s.borderBlocked}`}>
         <div className={s.wrapperContent}>
-        <div className={s.topTitle}>Сказочное заморское яство</div>
-        <div className={s.productName}>{state.productName}</div>
-        <div className={s.taste}>{state.taste}</div>
-        <div className={s.portions + " " + s.topPortions}>
+        <div className={state.inStock ? s.topTitle : `${s.topTitle} ${s.textBlocked}`}>Сказочное заморское яство</div>
+        <div className={state.inStock ? s.productName : `${s.productName} ${s.textBlocked}`}>{state.productName}</div>
+        <div className={state.inStock ? s.taste : `${s.taste} ${s.textBlocked}`}>{state.taste}</div>
+        <div className={state.inStock ? `${s.portions} ${s.topPortions}` : `${s.portions} ${s.topPortions} ${s.textBlocked}`}>
           <span>{state.portions}</span> порций</div>
-        <div className={s.portions + " " + s.botPortions}>
+        <div className={state.inStock ? `${s.portions} ${s.botPortions}` : `${s.portions} ${s.botPortions} ${s.textBlocked}`}>
         <span>{state.presentsMouse === 1 ? '' : state.presentsMouse}</span>
           {state.presentsMouse <= 4
             ?
@@ -27,9 +27,9 @@ const FoodItem:FC<{state: foodData}> = ({state}) => {
             " мышей"
           } в подарок
         </div>
-        <div className={s.portions + " " + s.botPortions}>{state.satisfied}</div>
-        <img className={s.photo} src={Photo}/>
-        <div className={s.weightWrapper}>
+        <div className={state.inStock ? `${s.portions} ${s.botPortions}` : `${s.portions} ${s.botPortions} ${s.textBlocked}`}>{state.satisfied}</div>
+        <img className={state.inStock ? s.photo : `${s.photo} ${s.photoBlocked}`} src={Photo}/>
+        <div className={state.inStock ? s.weightWrapper : `${s.weightWrapper} ${s.weightBlocked}`}>
           <span className={s.weightCount}>{state.weight}</span>
           <span className={s.weight}>кг</span>
         </div>

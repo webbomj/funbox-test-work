@@ -99,6 +99,10 @@ a {
   left: -4px;
 }
 
+.photoBlocked {
+  opacity: 0.5;
+}
+
 .weightWrapper {
   position: absolute;
   bottom: 12px;
@@ -131,6 +135,10 @@ a {
   color: #FFFFFF;
 }
 
+.weightBlocked {
+  background: #B3B3B3;
+}
+
 .bottomText {
   margin-top: 14px;
   font-style: normal;
@@ -152,4 +160,12 @@ a {
   line-height: 15px;
   text-align: center;
   color: #FFFF66;
+}
+
+.textBlocked {
+  color: #B3B3B3;
+}
+
+.borderBlocked {
+  background: linear-gradient(135deg,transparent 31px,#b2b2b2 0),0 0,no-repeat;
 }
