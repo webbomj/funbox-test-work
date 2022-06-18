@@ -1,7 +1,8 @@
 import s from './FoodList.module.css'
 import FoodItem from '../FoodItem/FoodItem';
 import { FC } from 'react';
-import { foodData } from '../../App';
+import { foodData } from '../../types/FoodData';
+
 
 const FoodList:FC<{state: foodData[]}> = ({state}) => {
   return (
